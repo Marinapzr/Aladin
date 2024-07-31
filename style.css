@@ -1,0 +1,78 @@
+/* Define o estilo base para todos os elementos, removendo margens e preenchimentos padrão.
+   Também define a fonte padrão "Sevillana" para todo o documento. */
+   * {
+    margin: 0; /* Remove a margem padrão de todos os elementos */
+    padding: 0; /* Remove o preenchimento padrão de todos os elementos */
+    box-sizing: border-box; /* Inclui bordas e preenchimentos nas dimensões totais do elemento */
+    font-family: "Sevillana", cursive; /* Define a fonte "Sevillana" para todos os textos */
+    font-weight: 400; /* Define o peso da fonte como 400 (normal) */
+    font-style: normal; /* Define o estilo da fonte como normal */
+}
+      
+/* Define o estilo para o elemento <html>, adicionando uma imagem de fundo que cobre toda a área disponível. */
+html {
+    background-image: url(./img/fundo.avif); /* Define a imagem de fundo */
+    background-repeat: no-repeat; /* Impede que a imagem de fundo se repita */
+    background-size: cover; /* Faz com que a imagem de fundo cubra toda a área do elemento */
+}
+      
+/* Define o estilo para o elemento <header>, utilizando flexbox para centralizar seu conteúdo. */
+header {
+    display: flex; /* Utiliza flexbox para facilitar o alinhamento dos filhos do header */
+    justify-content: center; /* Centraliza horizontalmente o conteúdo dentro do header */
+    text-align: center; /* Centraliza o texto dentro do header */
+}
+
+/* Define o estilo para o elemento <h1> dentro do <header>, incluindo tamanho da fonte, largura, altura,
+   preenchimento superior e cor do texto. */
+header h1 {
+    font-size: 50px; /* Define o tamanho da fonte como 50 pixels */
+    width: 100%; /* Define a largura como 100% do elemento pai */
+    height: 10vh; /* Define a altura como 10% da altura da visualização */
+    padding-top: 25px; /* Adiciona 25 pixels de preenchimento na parte superior */
+    color: #fff; /* Define a cor do texto como branca */
+}
+
+/* Define o estilo para o elemento <main>, utilizando flexbox para centralizar seu conteúdo verticalmente.
+   Define também a altura do <main>. */
+main {
+    height: 80vh; /* Define a altura como 80% da altura da visualização */
+    display: flex; /* Utiliza flexbox para facilitar o alinhamento dos filhos do main */
+    flex-direction: column; /* Organiza os filhos em uma coluna */
+    align-items: center; /* Centraliza os filhos horizontalmente */
+}
+
+/* Define o estilo para os elementos <div> dentro do <main>, centralizando seu conteúdo horizontalmente
+   e organizando-os em uma coluna. */
+main div {
+    display: flex; /* Utiliza flexbox para facilitar o alinhamento dos filhos do div */
+    flex-direction: column; /* Organiza os filhos em uma coluna */
+    align-items: center; /* Centraliza os filhos horizontalmente */
+}
+
+/* Define o estilo para as imagens dentro do <main>, incluindo largura e margem superior. */
+main img {
+    width: 32vw; /* Define a largura como 32% da largura da visualização */
+    margin-top: 40px; /* Adiciona 40 pixels de margem na parte superior */
+}
+
+/* Define o estilo para os botões dentro do <main>, incluindo margem superior, preenchimento, largura,
+   tamanho da fonte, cor do texto, cor de fundo, borda, raio da borda e cursor. 
+   Também adiciona uma transição suave para a sombra da caixa ao passar o mouse sobre o botão. */
+main button {
+    margin-top: 10px; /* Adiciona 10 pixels de margem na parte superior */
+    padding: 10px 20px; /* Adiciona 10 pixels de preenchimento vertical e 20 pixels horizontal */
+    width: 20vw; /* Define a largura como 20% da largura da visualização */
+    font-size: 24px; /* Define o tamanho da fonte como 24 pixels */
+    color: #fff; /* Define a cor do texto como branca */
+    background-color: #007BFF; /* Define a cor de fundo como azul */
+    border: none; /* Remove qualquer borda */
+    border-radius: 80px; /* Define o raio da borda como 80 pixels, tornando as bordas arredondadas */
+    cursor: pointer; /* Muda o cursor para um ponteiro (mão) quando sobre o botão */
+    transition: box-shadow 0.3s ease; /* Adiciona uma transição suave para a sombra da caixa ao passar o mouse */
+}
+
+/* Define o estilo para o botão quando o mouse passa sobre ele, adicionando uma sombra à caixa. */
+main button:hover {
+    box-shadow: 0 0 15px rgba(0, 123, 255, 0.7); /* Adiciona uma sombra azul ao redor do botão */
+}
